@@ -14,7 +14,7 @@ class EjsController < ApplicationController
     @formatted_h3s = h3s.split(/(?<!\s)(?=[A-Z])/) #array
 
     links = doc.css('a[href]')
-    @all_links = links.map {|element| element["href"]}
+    @all_links = links.map {|element| element["href"]} #big array
 
     render template: 'ejs/home'
   end
