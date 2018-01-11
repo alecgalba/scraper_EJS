@@ -1,17 +1,23 @@
 <h1>All "h1" Tags</h1>
-<%= @h1 %>
+<ul><li><%= @h1 %></li></ul>
 
 <h1>All "h2" Tags</h1>
-<% @formatted_h2s.each do |a| %>
-  <%= a %><br>
-<% end %>
+<ul>
+  <% @formatted_h2s.each do |a| %>
+    <li><%= a %><br></li>
+  <% end %>
+</ul>
 
 <h1>All "h3" Tags</h1>
-<% @formatted_h3s.each do |b| %>
-  <%= b %><br>
-<% end %>
+<ul>
+  <% @formatted_h3s.each do |b| %>
+    <li><%= b %><br></li>
+  <% end %>
+</ul>
 
 <h1>All "a" Tags (Links)</h1>
-<% @all_links.each do |c| %>
-  <%= c %></br>
-<% end %>
+<ul>
+  <% @all_links.each do |c| %>
+<li><%= c %></br></li>
+  <% end %>
+</ul>
